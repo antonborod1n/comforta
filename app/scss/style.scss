@@ -4,13 +4,84 @@
 @import 'global'; /* Глобальные стили */
 
 
+.header {
+}
+.header__inner {
+}
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F8F8F8;
+    padding: 17px 0;
+    &-contact {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+.header__top-text {
+}
+.header__top-link {
+}
+.header__top-menu {
+}
+.header__top-account {
+}
+.header__top-carancy {
+}
+.header__center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+.logo {
+}
+.header__center-img {
+}
+.form {
+}
+.form__search {
+}
+.cart {
+    display: flex;
+    justify-content: space-between;
+}
+.cart__link {
+}
+.cart__img {
+}
+.cart__text {
+}
+.cart__product {
+}
+.cart__sum {
+}
+.menu {
+    background-color: $accent;
+    padding: 20px 0;
+}
+.menu__list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.menu__list-item + .menu__list-item{
+    padding-left: 40px;
+}
+.menu__list-link {
+    color: #1A1A1A;
+    text-transform: uppercase;
+    font-size: 13px;
+    line-height: 20px;
+}
 
-
-
-
-
-
-
+.menu__list-item--color {
+    background-color: $title;
+    padding: 10px 18px;
+    border-radius: 50px;
+}
 
 
 

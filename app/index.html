@@ -8,10 +8,98 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.min.css">
+    <link rel="stylesheet" href="./css/style.min.css">
 </head>
 
 <body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__top">
+                    <div class="header__top-contact">
+                        <div class="header__top-text">Служба поддержки:
+                            <a class="header__top-link" href="tel:880012345678">8 (800) 1234-56-78</a>
+                        </div>
+                        <div class="header__top-text">
+                            E-mail:
+                            <a class="header__top-link" href="mailto:support@example.com">support@example.com</a>
+                        </div>
+                    </div>
+                    <div class="header__top-menu">
+                        <a class="header__top-account" href="#">Мой аккаунт</a>
+                        <a class="header__top-carancy" href="#">Валюта:</a>
+                    </div>
+                </div>
+                <div class="header__center">
+                    <a class="logo" href="#">
+                        <img class="header__center-img" src="./images/logo.png" alt="Логотип">
+                    </a>
+                    <form class="form" action="#" method="get">
+                        <input class="form__search" type="search">
+                    </form>
+                    <div class="cart">
+                        <a class="cart__link">
+                            <img class="cart__img" src="./images/icons/cart.svg" alt="Cart">
+                        </a>
+                        <div class="cart__box">
+                            <p class="cart__text">Ваша корзина</p>
+                            <span class="cart__product">0 товаров —</span>
+                            <span class="cart__sum">0 цена</span>
+                        </div>
+                    </div>
+                </div>
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__list-item menu__list-item--color">
+                            <a class="menu__list-link" href="#">
+                                <img src="./images/icons/house.svg" alt="Home">
+                            </a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">
+                                Каталог
+                            </a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">
+                                О сайте
+                            </a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">
+                                Субменю
+                            </a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">
+                                Блог
+                            </a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">
+                                Фотографии
+                            </a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">
+                                Контакты
+                            </a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">
+                                FAQ
+                            </a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">
+                                Страницы
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
 
     <script src="js/main.min.js"></script>
 </body>
