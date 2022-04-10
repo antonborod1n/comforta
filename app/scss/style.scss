@@ -47,8 +47,22 @@
 .cart {
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 .cart__link {
+}
+.cart__number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $title;
+    color: #FFFFFF;
+    border-radius: 50%;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 0;
+    left: 0;
 }
 .cart__img {
 }
@@ -60,7 +74,7 @@
 }
 .menu {
     background-color: $accent;
-    padding: 20px 0;
+    padding: 10px 0;
 }
 .menu__list {
     display: flex;
@@ -68,21 +82,31 @@
     align-items: center;
 }
 .menu__list-item + .menu__list-item{
-    padding-left: 40px;
+    padding-left: 10px;
 }
 .menu__list-link {
+    @extend %montserrat-500;
     color: #1A1A1A;
     text-transform: uppercase;
     font-size: 13px;
     line-height: 20px;
+    padding: 10px 18px
 }
 
-.menu__list-item--color {
+.menu__list-link:hover{
+    color: #FFFFFF;
     background-color: $title;
     padding: 10px 18px;
     border-radius: 50px;
+    transition: all .3s;
 }
 
+/* .menu__list-item--color {
+    background-color: $title;
+    padding: 0 18px;
+    border-radius: 50px;
+}
+ */
 
 
 @import 'media'; /* медиа-запросы */

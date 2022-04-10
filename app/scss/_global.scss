@@ -1,4 +1,5 @@
 body {
+    @extend %montserrat-400;
     font-size: 13px;
     color: $text;
     line-height: 20px;
