@@ -13,9 +13,9 @@
 
 <body>
     <header class="header">
-        <div class="container">
-            <div class="header__inner">
-                <div class="header__top">
+        <div class="header__top">
+            <div class="container">
+                <div class="header__top-box">
                     <div class="header__top-contact">
                         <div class="header__top-text">Служба поддержки:
                             <a class="header__top-link" href="tel:880012345678">8 (800) 1234-56-78</a>
@@ -30,12 +30,23 @@
                         <a class="header__top-carancy" href="#">Валюта:</a>
                     </div>
                 </div>
-                <div class="header__center">
+            </div>
+        </div>
+        <div class="header__center">
+            <div class="container">
+                <div class="header__center-box">
                     <a class="logo" href="#">
                         <img class="header__center-img" src="./images/logo.png" alt="Логотип">
                     </a>
-                    <form class="form" action="#" method="get">
-                        <input class="form__search" type="search">
+                    <form class="serche" action="https://fe.it-academy.by/TestForm.php" method="get">
+                        <select class="serche__product" name="product">
+                            <option value="1">Магазин</option>
+                            <option value="2">Весь сайт</option>
+                        </select>
+                        <div class="form">
+                            <input class="form__search" type="text" name="text" placeholder="Введите поисковую фразу">
+                            <input class="form__search-btn" type="submit" name="search-btn" value="">
+                        </div>
                     </form>
                     <div class="cart">
                         <a class="cart__link">
@@ -49,6 +60,10 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <div class="container">
                 <nav class="menu">
                     <ul class="menu__list">
                         <li class="menu__list-item menu__list-item--color">
