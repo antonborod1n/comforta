@@ -78,7 +78,7 @@
     background-color: $accent;
     padding: 0 30px 0 20px;
     background-image: url(../images/icons/arrow-down.svg);  
-    background-position: 85% center;
+    background-position: 80% center;
     background-repeat: no-repeat;
 }
 .form {
@@ -185,6 +185,64 @@
     border-radius: 50px;
 }
  */
+
+
+ .footer {
+     padding: 70px 0 30px;
+     background-color: #131517;
+     color: #FFFFFF;
+}
+
+.footer__content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+.footer__list {
+}
+.footer__list-title {
+    font-size: 21px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+.footer__item {
+    margin-bottom: 15px;
+}
+.footer__link {
+    color: #FFFFFF;
+}
+.footer__link::before{
+    content: url(../images/icons/arrow-right.svg);
+    vertical-align: -4px;
+}
+.footer__content-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footer__content-info-text,
+.footer__content-info-link {
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+
+.footer__content-credit {
+
+}
+.footer__content-img {
+}
+.footer__copy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #4d4c4c;
+    padding-top: 30px;
+}
+
+.footer__copy a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
 
 
 @import 'media'; /* медиа-запросы */
