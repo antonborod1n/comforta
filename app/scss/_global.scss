@@ -22,3 +22,7 @@ body {
 .main {
     flex-grow: 1;
 }
+
+.btn {
+    @extend %btn;
+}
