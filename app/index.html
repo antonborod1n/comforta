@@ -7,7 +7,6 @@
     <title>Интернет-магазин мебели в Минске - Comforta</title>
     <meta name="description"
         content="Купить мебель в интернет-магазине Comforta по низким ценам. Мировые бренды качественных изделий. Доставка по Минску и всей Беларуси. Самовывоз." />
-    <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -29,12 +28,12 @@
                         </div>
                     </div>
                     <div class="header__top-menu">
-                        <p class="header__top-carancy" href="#">Валюта:</p>
-                        <form class="form__carancy">
-                            <select class="form__carancy-list" name="product">
-                                <option value="1">BYN</option>
-                                <option value="2">RUB</option>
-                                <option value="3">USD</option>
+                        <p class="header__top-currency" href="#">Валюта:</p>
+                        <form class="form__currency" action="#" method="post" name="form-currency">
+                            <select class="form__currency-list" name="select-currency">
+                                <option class="form__currency-option" name="option-currency" value="BYN">BYN</option>
+                                <option class="form__currency-option" name="option-currency" value="RUB">RUB</option>
+                                <option class="form__currency-option" name="option-currency" value="USD">USD</option>
                             </select>
                         </form>
                     </div>
@@ -48,7 +47,7 @@
                     <a class="logo" href="#">
                         <img class="header__center-img" src="./images/logo.png" alt="Логотип">
                     </a>
-                    <form class="serche" action="https://fe.it-academy.by/TestForm.php" method="get">
+                    <form class="serche" action="#" method="get">
                         <select class="serche__product" name="product">
                             <option value="1">Магазин</option>
                             <option value="2">Весь сайт</option>
@@ -76,8 +75,11 @@
         <div class="header__bottom">
             <div class="container">
                 <nav class="menu">
+                    <button class="menu__btn">
+                        <span class="menu-burger"></span>Меню сайта
+                    </button>
                     <ul class="menu__list">
-                        <li class="menu__list-item menu__list-item--color">
+                        <li class="menu__list-item--color">
                             <a href="#">
                                 <img src="./images/icons/house.svg" alt="Home">
                             </a>
@@ -174,7 +176,7 @@
             </div>
         </section>
 
-        <section class="hit">
+        <!-- <section class="hit">
             <div class="container">
                 <h2 class="hit__title">Лидеры продаж</h2>
                 <p class="hit__text">Сфера нашей активности влечет за собой процесс внедрения и модернизации
@@ -1346,7 +1348,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
     </main>
 
     <footer class="footer">
@@ -1377,13 +1379,14 @@
                         лет!
                     </p>
                     <div class="footer__content-info-box">
-                        <div class="footer__content-info-text">Служба поддержки:
-                            <a class="footer__content-info-link" href="tel:880012345678">8 (800) 1234-56-78</a>
-                        </div>
-                        <div class="footer__content-info-text">
-                            E-mail:
-                            <a class="footer__content-info-link"
-                                href="mailto:support@example.com">support@example.com</a>
+                        <div class="footer__content-info-box-contact">
+                            <div class="footer__content-info-text">Служба поддержки:
+                                <a class="footer__content-info-link" href="tel:880012345678">8 (800) 1234-56-78</a>
+                            </div>
+                            <div class="footer__content-info-text">E-mail:
+                                <a class="footer__content-info-link"
+                                    href="mailto:support@example.com">support@example.com</a>
+                            </div>
                         </div>
                         <div class="footer__content-social">
                             <ul class="footer__content-list">
@@ -1477,8 +1480,13 @@
                 </ul>
             </div>
         </div>
+        
     </footer>
+    
 
-    <script src="js/main.min.js"></script>
+
+    <script src="js/currency.js"></script>
+    <script src="js/main.js"></script>
 </body>
+
 </html>

@@ -2,6 +2,8 @@
 /* Цвет */
 @import 'fonts';
 /* Шрифты */
+@import 'libs';
+/*библиотеки*/
 @import 'reset';
 /* Сброс */
 @import 'global';
@@ -20,6 +22,7 @@
         &-box {
             display: flex;
             justify-content: space-between;
+            flex-wrap: wrap;
             align-items: center;
             padding: 17px 0;
         }
@@ -50,7 +53,7 @@
             color: $text;
         }
 
-        &-carancy {
+        &-currency {
             color: $text;
             padding-left: 20px;
         }
@@ -121,7 +124,7 @@
         }
     }
 
-    &__carancy {
+    &__currency {
         &-list {
             border: none;
             background-color: transparent;
@@ -171,6 +174,22 @@
 .menu {
     padding: 10px 0;
 
+    &__btn {
+        display: none;
+        background-color: $title;
+        padding: 11px 18px 11px 50px;
+        border-radius: 50px;
+        border: none;
+        color: #FFFFFF;
+        position: relative;
+        &::before {
+            content: url(../images/icons/burger.svg);
+            position: absolute;
+            top: 10px;
+            left: 20px;
+        } 
+    }
+
     &__list {
         display: flex;
         justify-content: flex-start;
@@ -197,6 +216,7 @@
             font-size: 13px;
             line-height: 20px;
             padding: 10px 18px;
+            white-space: nowrap;
 
             &:hover {
                 color: #FFFFFF;
@@ -638,13 +658,14 @@
     &__content {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 70px;
+        margin-bottom: 50px;
 
         &-info {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-
+            padding-left: 10px;
+            margin-bottom: 20px;
             &-text,
             &-link {
                 color: #FFFFFF;
@@ -695,6 +716,7 @@
             font-size: 21px;
             line-height: 22px;
             margin-bottom: 20px;
+            padding-right: 10px;
         }
     }
 
@@ -743,6 +765,7 @@
 
     &__item {
         margin-bottom: 15px;
+        padding-right: 10px;
     }
 
     &__link {
@@ -755,6 +778,7 @@
     }
 
     &__copy {
+        position: relative;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -956,22 +980,32 @@
                 object-fit: cover;
             }
         }
+
         &-item {
             margin-bottom: 3px;
         }
+
         &-big {
             position: relative;
+            overflow: hidden;
+
             &-img {
                 object-fit: cover;
             }
         }
+
         &-new {
             top: 5px;
+            position: absolute;
+            z-index: 10;
         }
-    
+
         &-sale {
             top: 30px;
+            position: absolute;
+            z-index: 10;
         }
+
         &-title {
             font-size: 20px;
             line-height: 22px;
@@ -1049,153 +1083,120 @@
             color: $title;
         }
     }
-}
 
+    &__form {
+        margin-bottom: 15px;
 
+        &-select {
+            @extend %montserrat-400;
+            color: #1a1a1a;
+            border-radius: 100px;
+            background: #ededed;
+            border: none;
+            cursor: pointer;
+            font-size: 13px;
+            line-height: 22px;
+            height: 36px;
+            width: 120px;
+            padding: 7px 38px 7px 20px;
+            background-image: url(../images/icons/arrow-down.svg);
+            background-position: 90px center;
+            background-repeat: no-repeat;
+            appearance: none;
+        }
 
+        &__form-size {
+            margin-left: 5px;
+        }
 
+        &__form-box {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+        }
 
+        &__form-btn-bye {
+            background-image: url(../images/icons/cart-goods.svg);
+            background-repeat: no-repeat;
+            background-position: 15px center;
+            padding: 10px 20px 10px 37px;
+            background-color: $accent;
+            border-radius: 100px;
+            @extend %montserrat-400;
+            font-size: 13px;
+            color: $title;
+            cursor: pointer;
+            border: none;
+        }
 
-.goods__form {
-    margin-bottom: 15px;
+        &__form-btn-one {
+            background-image: url(../images/icons/click.svg);
+            background-position: 15px center;
+            background-repeat: no-repeat;
+            padding: 10px 20px 10px 37px;
+            background-color: #EDEDED;
+            border-radius: 100px;
+            @extend %montserrat-400;
+            font-size: 13px;
+            color: $title;
+            cursor: pointer;
+            border: none;
+            margin-left: 5px;
+        }
 
-    &-select {
-        @extend %montserrat-400;
-        color: #1a1a1a;
-        border-radius: 100px;
-        background: #ededed;
-        border: none;
-        cursor: pointer;
-        font-size: 13px;
-        line-height: 22px;
-        height: 36px;
-        width: 120px;
-        padding: 7px 38px 7px 20px;
-        background-image: url(../images/icons/arrow-down.svg);
-        background-position: 90px center;
-        background-repeat: no-repeat;
-        appearance: none;
+        &__form-btn-like {
+            background-image: url(../images/icons/heart.svg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            width: 50px;
+            height: 40px;
+            background-color: #EDEDED;
+            border-radius: 40px;
+            cursor: pointer;
+            border: none;
+            margin-left: 5px;
+        }
     }
-}
 
-.goods__form-size {
-    margin-left: 5px;
-}
-
-.goods__form-box {
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-}
-
-.goods__form-btn-bye {
-    background-image: url(../images/icons/cart-goods.svg);
-    background-repeat: no-repeat;
-    background-position: 15px center;
-    padding: 10px 20px 10px 37px;
-    background-color: $accent;
-    border-radius: 100px;
-    @extend %montserrat-400;
-    font-size: 13px;
-    color: $title;
-    cursor: pointer;
-    border: none;
-}
-
-.goods__form-btn-one {
-    background-image: url(../images/icons/click.svg);
-    background-position: 15px center;
-    background-repeat: no-repeat;
-    padding: 10px 20px 10px 37px;
-    background-color: #EDEDED;
-    border-radius: 100px;
-    @extend %montserrat-400;
-    font-size: 13px;
-    color: $title;
-    cursor: pointer;
-    border: none;
-    margin-left: 5px;
-}
-
-.goods__form-btn-like {
-    background-image: url(../images/icons/heart.svg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    width: 50px;
-    height: 40px;
-    background-color: #EDEDED;
-    border-radius: 40px;
-    cursor: pointer;
-    border: none;
-    margin-left: 5px;
-}
-
-
-
-
-.goods__tabs {
-    margin-bottom: 70px;
-    background-color: #FFFFFF;
-}
-
-.goods__tabs-control {
-    background-color: #FCFAF0;
-}
-
-.goods__tabs-control-btn {
-    padding: 0 20px;
-    color: $title;
-    font-size: 15px;
-    line-height: 50px;
-    border: none;
-    background-color: #FCFAF0;
-    cursor: pointer;
-
-    &--active {
+    &__tabs {
+        margin-bottom: 70px;
         background-color: #FFFFFF;
-        cursor: default;
-    }
 
-    &:hover {
-        background-color: $accent;
-        transition: all .3s;
-    }
+        &-control {
+            background-color: #FCFAF0;
 
-    &--active:hover {
-        background-color: #FFFFFF;
+            &-btn {
+                padding: 0 20px;
+                color: $title;
+                font-size: 15px;
+                line-height: 50px;
+                border: none;
+                background-color: #FCFAF0;
+                cursor: pointer;
+
+                &--active {
+                    background-color: #FFFFFF;
+                    cursor: default;
+                }
+
+                &:hover {
+                    background-color: $accent;
+                    transition: all .3s;
+                }
+
+                &--active:hover {
+                    background-color: #FFFFFF;
+                }
+            }
+        }
+
+        &-content-foto {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
     }
 }
-
-.goods__tabs-text {
-    padding: 20px;
-}
-
-.goods__tabs-text-desc {}
-
-.goods__tabs-text-foto {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.goods__tabs-text-rev {}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @import 'media';
 /* МЕДИА-ЗАПРОСЫ */

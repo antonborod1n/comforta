@@ -7,7 +7,6 @@
     <title>Интернет-магазин мебели в Минске - Comforta</title>
     <meta name="description"
         content="Купить мебель в интернет-магазине Comforta по низким ценам. Мировые бренды качественных изделий. Доставка по Минску и всей Беларуси. Самовывоз." />
-    <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -204,7 +203,7 @@
                                     <p class="shop__aside-desc">Дизайн интерьера комнаты</p>
                                     <p class="shop__aside-subtitle">Под ключ</p>
                                     <p class="shop__aside-price">39<sup>990 ₽</sup></p>
-                                    <a class="shop__aside-banner-link btn">Узнать больше</a>
+                                    <a class="shop__aside-banner-link btn" onclick="a()">Узнать больше</a>
                                 </div>
                             </div>
                         </div>
@@ -214,19 +213,19 @@
                                     <div class="goods__top-big">
                                         <div class="product__new goods__top-new">new</div>
                                         <div class="product__sale goods__top-sale">sale</div>
-                                        <img class="goods__top-big-img" src="./images/product/main-1.jpg" alt="Товар">
+                                        <img class="goods__top-big-img img__scale" src="./images/product/main-1.jpg" alt="Товар">
                                     </div>
                                     <div class="goods__top-thumb">
                                         <div class="goods__top-thumb-item">
-                                            <img class="goods__top-thumb-img" src="./images/product/main-little1.jpg"
+                                            <img class="goods__top-thumb-img img__scale" src="./images/product/main-little1.jpg"
                                                 alt="Товар">
                                         </div>
                                         <div class="goods__top-thumb-item">
-                                            <img class="goods__top-thumb-img" src="./images/product/main-little2.jpg"
+                                            <img class="goods__top-thumb-img img__scale" src="./images/product/main-little2.jpg"
                                                 alt="Товар">
                                         </div>
                                         <div class="goods__top-thumb-item">
-                                            <img class="goods__top-thumb-img" src="./images/product/main-little3.jpg"
+                                            <img class="goods__top-thumb-img img__scale" src="./images/product/main-little3.jpg"
                                                 alt="Товар">
                                         </div>
                                     </div>
@@ -316,8 +315,8 @@
                                     <button class="goods__tabs-control-btn">Фотографии</button>
                                     <button class="goods__tabs-control-btn ">Отзывы</button>
                                 </div>
-                                <div class="goods__tabs-text">
-                                    <div class="goods__tabs-text-desc">
+                                <div class="goods__tabs-content">
+                                    <div class="goods__tabs-content-desc goods__tabs-content-block goods__tabs--active">
                                         <p>
                                             С другой стороны начало повседневной работы по формированию позиции требуют
                                             от нас анализа системы обучения кадров, соответствует насущным потребностям.
@@ -333,12 +332,12 @@
                                             собой процесс внедрения и модернизации дальнейших направлений развития.
                                         </p>
                                     </div>
-                                    <div class="goods__tabs-text-foto"><!-- Таб для фотографий -->
+                                    <div class="goods__tabs-content-foto goods__tabs-content-block">
                                         <img src="./images/product/main-little1.jpg" alt="Товар">
                                         <img src="./images/product/main-little2.jpg" alt="Товар">
                                         <img src="./images/product/main-little3.jpg" alt="Товар">
                                     </div>
-                                    <div class="goods__tabs-text-rev"><!-- Таб для отзыва -->
+                                    <div class="goods__tabs-content-rev goods__tabs-content-block">
                                         <p>
                                             Задача организации, в особенности же постоянное
                                             информационно-пропагандистское обеспечение нашей деятельности влечет за
@@ -752,7 +751,8 @@
         </div>
     </footer>
 
-    <script src="js/main.min.js"></script>
+    <script src="js/tabs.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
