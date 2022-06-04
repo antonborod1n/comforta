@@ -182,12 +182,13 @@
         border: none;
         color: #FFFFFF;
         position: relative;
+
         &::before {
             content: url(../images/icons/burger.svg);
             position: absolute;
             top: 10px;
             left: 20px;
-        } 
+        }
     }
 
     &__list {
@@ -268,6 +269,9 @@
         &-item {
             width: 370px;
             height: 170px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
         }
 
         &-text {
@@ -308,27 +312,6 @@
             line-height: 36px;
         }
     }
-}
-
-.banner-one {
-    background-image: url(../images/banner-1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-
-.banner-two {
-    background-image: url(../images/banner-2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-
-.banner-three {
-    background-image: url(../images/banner-3.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
 }
 
 /* HIT */
@@ -376,7 +359,7 @@
             line-height: 18px;
             color: $title;
             text-align: center;
-            padding-top: 20px;
+            padding: 20px 10px 0;
         }
 
         &__img {
@@ -645,6 +628,9 @@
         &-text {
             margin-bottom: 18px;
         }
+        & + .info__item {
+            margin-right: 10px;
+        }
     }
 }
 
@@ -666,6 +652,7 @@
             justify-content: space-between;
             padding-left: 10px;
             margin-bottom: 20px;
+
             &-text,
             &-link {
                 color: #FFFFFF;

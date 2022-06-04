@@ -28,3 +28,6 @@ menuBtn.addEventListener('click', function() {
 });
 
 
+let a = 42;
+
+localStorage.setItem('a', a);
