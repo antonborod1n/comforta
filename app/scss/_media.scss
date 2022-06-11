@@ -56,16 +56,20 @@
     }
 
     .menu {
+        position: relative;
         &__list {
-            //transform: translateY(-300%);
+            width: 100%;
+            position: absolute;
+            transform: translateY(-300%);
             flex-direction: column;
             transition: all .5s;
-            display: none;
-
+            z-index: 10;
+            left: 0;
+            top: 62px;          
             &--active {
-                //transform: translateY(0%);
+                background-color: #fff;
+                transform: translateY(0%);
                 transition: all .5s;
-                display: block;
             }
 
             &-item {

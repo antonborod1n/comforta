@@ -336,13 +336,12 @@
 
 .product {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 30px;
 
     &-item {
         max-width: 270px;
         cursor: pointer;
-
         &:hover .product-item__link-menu {
             transform: translateY(0);
         }
@@ -798,12 +797,12 @@
     background: #FCFAF0;
 
     &__content {
-        max-width: 870px;
+        max-width: 100%;
+        flex-grow: 1;
     }
 
     &__inner {
         display: flex;
-        justify-content: space-between;
     }
 
     &__aside {
@@ -925,6 +924,9 @@
         grid-template-columns: repeat(3, 1fr);
         gap: 30px;
         margin-bottom: 30px;
+        &.shop__product--block {
+            display: block;
+        }
     }
 }
 

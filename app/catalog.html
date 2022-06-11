@@ -28,12 +28,12 @@
                         </div>
                     </div>
                     <div class="header__top-menu">
-                        <p class="header__top-carancy" href="#">Валюта:</p>
-                        <form class="form__carancy">
-                            <select class="form__carancy-list" name="product">
-                                <option value="1">BYN</option>
-                                <option value="2">RUB</option>
-                                <option value="3">USD</option>
+                        <p class="header__top-currency" href="#">Валюта:</p>
+                        <form class="form__currency" action="#" method="post" name="form-currency">
+                            <select class="form__currency-list" name="select-currency">
+                                <option class="form__currency-option" name="option-currency" value="BYN">BYN</option>
+                                <option class="form__currency-option" name="option-currency" value="RUB">RUB</option>
+                                <option class="form__currency-option" name="option-currency" value="USD">USD</option>
                             </select>
                         </form>
                     </div>
@@ -47,7 +47,7 @@
                     <a class="logo" href="#">
                         <img class="header__center-img" src="./images/logo.png" alt="Логотип">
                     </a>
-                    <form class="serche" action="https://fe.it-academy.by/TestForm.php" method="get">
+                    <form class="serche" action="#" method="get">
                         <select class="serche__product" name="product">
                             <option value="1">Магазин</option>
                             <option value="2">Весь сайт</option>
@@ -75,8 +75,11 @@
         <div class="header__bottom">
             <div class="container">
                 <nav class="menu">
+                    <button class="menu__btn">
+                        <span class="menu-burger"></span>Меню сайта
+                    </button>
                     <ul class="menu__list">
-                        <li class="menu__list-item menu__list-item--color">
+                        <li class="menu__list-item--color">
                             <a href="#">
                                 <img src="./images/icons/house.svg" alt="Home">
                             </a>
@@ -209,21 +212,22 @@
                     <div class="shop__content">
                         <div class="shop__control">
                             <div class="shop__control-grid">
-                                <button class="shop__control-btn"><svg width="16" height="16" viewBox="0 0 16 16"
-                                        fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect width="4" height="4" fill="black" />
-                                        <rect x="6" width="4" height="4" fill="black" />
-                                        <rect x="12" width="4" height="4" fill="black" />
-                                        <rect y="6" width="4" height="4" fill="black" />
-                                        <rect x="6" y="6" width="4" height="4" fill="black" />
-                                        <rect x="12" y="6" width="4" height="4" fill="black" />
-                                        <rect y="12" width="4" height="4" fill="black" />
-                                        <rect x="6" y="12" width="4" height="4" fill="black" />
-                                        <rect x="12" y="12" width="4" height="4" fill="black" />
+                                <button class="shop__control-btn shop__control-btn--grid shop__control-btn--black"><svg
+                                        width="16" height="16" viewBox="0 0 16 16" fill="#d1d1d1"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="4" height="4" fill="#d1d1d1" />
+                                        <rect x="6" width="4" height="4" fill="#d1d1d1" />
+                                        <rect x="12" width="4" height="4" fill="#d1d1d1" />
+                                        <rect y="6" width="4" height="4" fill="#d1d1d1" />
+                                        <rect x="6" y="6" width="4" height="4" fill="#d1d1d1" />
+                                        <rect x="12" y="6" width="4" height="4" fill="#d1d1d1" />
+                                        <rect y="12" width="4" height="4" fill="#d1d1d1" />
+                                        <rect x="6" y="12" width="4" height="4" fill="#d1d1d1" />
+                                        <rect x="12" y="12" width="4" height="4" fill="#d1d1d1" />
                                     </svg>
                                 </button>
-                                <button class="shop__control-btn"><svg width="18" height="16" viewBox="0 0 18 16"
-                                        fill="#d1d1d1" xmlns="http://www.w3.org/2000/svg">
+                                <button class="shop__control-btn shop__control-btn--block"><svg width="18" height="16"
+                                        viewBox="0 0 18 16" fill="#d1d1d1" xmlns="http://www.w3.org/2000/svg">
                                         <rect width="4" height="4" fill="#d1d1d1" />
                                         <rect x="6" width="12" height="4" fill="#d1d1d1" />
                                         <rect y="6" width="4" height="4" fill="#d1d1d1" />
@@ -240,7 +244,7 @@
                                 <button class="shop__control-sort-btn">Дата добавления</button>
                             </div>
                         </div>
-                        <div class="shop__product">
+                        <div class="shop__product shop__product--block">
                             <div class="product-item">
                                 <div class="product-item-box">
                                     <div class="product__new">new</div>
@@ -1291,7 +1295,7 @@
                                         </li>
                                     </ul>
                                 </div>
-                            </div>  
+                            </div>
                         </div>
                         <div class="pagination pagination-top">
                             <button class="pagination__link-more" href="#">Показать еще</button>
@@ -1303,7 +1307,7 @@
                         </div>
                     </div>
                 </div>
-        </section>    
+        </section>
     </main>
     <footer class="footer">
         <div class="container">
@@ -1434,6 +1438,7 @@
             </div>
         </div>
     </footer>
+    <script src="js/productblock.js"></script>
     <script src="js/main.min.js"></script>
 </body>
 

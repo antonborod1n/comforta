@@ -26,8 +26,3 @@ const menuList = document.querySelector('.menu__list');
 menuBtn.addEventListener('click', function() {
     menuList.classList.toggle('menu__list--active');
 });
-
-
-let a = 42;
-
-localStorage.setItem('a', a);
